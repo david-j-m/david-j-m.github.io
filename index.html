@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Moshe Avni - Creation of the World</title>
+
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>    <link rel="stylesheet" type="text/css" href="style.css">
+
+<style>
+    /*
+* {
+    border: 1px solid red;
+  }
+  */
+
+  img.moshe-img {max-width: 10vw !important;
+    max-height: 20vh !important;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+
+li.nav-box {border: white solid 1px;
+max-width: 20vw;
+margin-left: 3vw;
+margin-bottom: 1.5vh;
+font-size: 0.9rem;
+color: black;}
+.nav-col ul#js-menu {
+max-height: calc(100vh - 5rem);
+overflow-y: auto;
+width: 15vw;
+max-width: 20vw;
+font-size: 0.5rem;
+margin-top: -1vh;
+margin-left: -1vw;   
+z-index: 99;
+}
+#carousel-container {
+width: 80vw;
+position: relative;
+}
+.slick-carousel {margin-left: 20vw;
+        width: 50vw;
+        max-height: 80vh;
+
+     }
+.slick-slide {
+margin-top: 1vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.slick-slide img {
+width: 100%;
+height: auto;
+text-align: center;
+
+}
+.caption {
+position: absolute;
+top: 40px; /* Adjust this value as needed */
+left: 87vw;
+transform: translateX(-50%);
+color: black;
+padding: 10px;
+border-radius: 5px;
+white-space: nowrap;
+font-size: 1.25rem;
+margin-top: 10vh;
+width: 20vw;
+text-align: center
+}
+.hebCaption {direction: rtl}
+#js-menu {top: 20vh}
+li.nav-item {font-size: 1rem;}
+.nav-col li {list-style: none;
+    text-align: center;
+}
+
+#engTxt {display: none;}
+
+
+* {
+font-family: 'Lato', sans-serif;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 0;
+} 
+.slick-prev {
+margin-left:  -20px;
+}
+.slick-next {
+margin-right: -20px;
+} 
+.slick-prev:before {
+content: "<";
+}
+.slick-next:before {
+content: ">";
+}
+
+.slick-next:hover, .slick-prev:hover {
+background-color:   rgb(7, 2, 7);
+color: white;
+}
+.slick-next:before, .slick-prev:before {
+background-color: rgb(189, 193, 249); 
+color: black;
+padding: 4px;
+padding-top: 2px;
+border: 1px solid black;
+font-size: 30px;
+font-weight: bold;
+} 
+ul.slick-dots {margin-bottom: -3vh;}
+.flex-container {
+position: absolute;
+top: 5vh;
+right: 5vw;
+text-align: center;
+white-space: pre;
+display: flex;
+flex-direction: column;
+
+width: 14vw;
+color:  #CD853F;
+background-color: #f4eee49d;
+align-items: flex-start;
+border-top: 1px solid white;
+border-left: 1px solid white;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+height: 40vh;
+max-height: 40vh;
+       }   
+div.flex-items {
+          white-space: initial;
+          margin: 0 auto;
+          margin-top: -5vh;
+          text-align: center;
+          margin-bottom: 3vh  
+      } 
+hr {width: 75%;
+margin: auto;
+height: 3px;
+background-color: white;
+border: none;       
+ margin-top: 15px}                
+</style>
+
+ </head>    
+<body style="background-color:  #E6E6FA;">
+<h2 style="color: green; margin-left: 40vw; ">Oil on Canvas - שמן על בד</h2>
+  <main id="row">
+<div class="nav-col" style="float: left">
+<nav id="navMenu" style="float: left; margin-top: 10vh">
+    <ul id="js-menu" style="float: left">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">Moshe Avni <br/>משה אבני</a><br><br>
+        </li>
+
+        <li class="nav-item">
+            <a href="oiloncanvas.html" class="nav-link">Oil on Canvas<br />שמן על בד</a><br><br>
+        </li>
+ 
+        </ul>
+</nav>
+</div>
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+-->
+<div class="carousel-container">
+  <div class="slick-carousel">
+
+  </div>
+
+    <div id="captions" class="caption-container">
+    
+ 
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>var medium = 'oilOnCanvas';</script>
+<!-- 
+<script src='loadCaptions.js'></script>
+-->
+  </main>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>var medium = 'oilOnCanvas';</script>   
+
+<script>
+  $(document).ready(function () {
+    mediumJson = 'json/' + medium + '.json';
+
+     fetch(mediumJson)
+
+     .then(function (response) {
+
+
+         return response.json();
+
+     })
+
+     .then(function (data) {
+
+         appendData(data);
+
+     })
+
+     .catch(function (err) {
+
+         alert('error: ' + err);
+
+         console.log('error: ' + err);
+
+     });
+
+ function appendData(data) {
+
+    mediumLen = data[medium].length;
+
+    var displayArray = "";
+    var captionArray = "";
+    for (var i = 0; i < mediumLen; i++) {
+
+        var mediumImg = data[medium][i].imgMain;
+        var titHeb = data[medium][i].titleHeb;
+        var titEng = data[medium][i].titleEng;
+        var yr = data[medium][i].year;
+        var w = data[medium][i].width;
+        var h = data[medium][i].height;
+        var altTxt = data[medium][i].alt;
+
+         displayArray += '<div><img src="imgs/' + medium + '/' + mediumImg + '" style="width:55%"> </div>\r\n';
+         
+         captionArray += '<div class="caption flex-container" data-index="' + i + '">' +
+                         '<div class="flex-items">'  + titHeb + ' <br/> <br/>'  + titEng + '<hr></div>' +
+                         '<div class="flex-items">'  + w + ' x ' + h + ' cm.<hr></div>' +
+                         '<div class="flex-items">'  + yr + '</div> </div>\r\n';
+                        }
+                      //  console.log("Display array:", displayArray); // Debug log
+                      //  console.log("Caption array:", captionArray); // Debug log                        
+                      document.querySelector(".slick-carousel").innerHTML = displayArray;
+                      document.getElementById("captions").innerHTML = captionArray;
+
+        $('.slick-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            adaptiveHeight: true
+        });
+        /*
+        // Update caption on slide change
+        $('.slick-carousel').on('afterChange', function(event, slick, currentSlide){
+          var caption = document.querySelectorAll('.caption')[currentSlide];
+        //  var captionsContainer = document.getElementById("captions");
+        //  captionsContainer.innerHTML = caption.innerHTML;
+          document.getElementById("captions").innerHTML = caption.innerHTML
+      });
+
+      // Set initial caption
+      var initialCaption = document.querySelectorAll('.caption')[0];
+      document.getElementById("captions").innerHTML = initialCaption.innerHTML;
+      */
+      }
+    });
+
+</script>
+  <script>
+    $(function(){
+      $("#navMenu").load("nav-list.html"); 
+    });
+  </script>
+
+ </body>
+</html>
